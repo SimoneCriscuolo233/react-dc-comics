@@ -60,12 +60,108 @@ Header {
   max-width: 1200px;
   margin: 0 auto;
 }
-.py-50{
+
+.py-50 {
   padding: 50px 0;
 }
-.bg-dark{
+
+.bg-dark {
   background-color: #1C1C1C;
 }
-.t-white{
+
+.t-white {
   color: #fff;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  background: url('../public/img/footer-bg.jpg') no-repeat center top;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer-top {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 35px;
+  z-index: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.footer-bottom {
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  z-index: 1;
+  position: relative;
+}
+
+.signup-btn {
+  border: 1px solid #007fff;
+  background: transparent;
+  color: #007fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.t-blue {
+  color: #007fff;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  margin-left: 10px;
+  cursor: pointer;
 }
