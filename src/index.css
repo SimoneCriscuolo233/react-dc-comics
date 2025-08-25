@@ -151,6 +151,10 @@ main {
   color: #007fff;
 }
 
+.bg-blue {
+  background-color: #007fff;
+}
+
 .pt-50 {
   padding-top: 50px;
 }
@@ -164,4 +168,16 @@ main {
 .social-icons img {
   margin-left: 10px;
   cursor: pointer;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.shop-img{
+  scale: 0.5;
+}
+section ul{
+  list-style: none;
+
 }
