@@ -18,7 +18,13 @@ Header {
 
 .d-flex {
   display: flex;
+}
+
+.justify-around {
   justify-content: space-around;
+}
+
+.align-center {
   align-items: center;
 }
 
@@ -48,4 +54,18 @@ Header {
 .list ul li a:hover {
   color: #0282F9;
   border-bottom: 8px solid #0282F9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.py-50{
+  padding: 50px 0;
+}
+.bg-dark{
+  background-color: #1C1C1C;
+}
+.t-white{
+  color: #fff;
 }
