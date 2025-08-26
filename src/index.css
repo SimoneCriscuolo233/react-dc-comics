@@ -49,12 +49,20 @@ Header {
   width: 75%;
 }
 
+.col-100 {
+  width: 100%;
+}
+
 .d-flex {
   display: flex;
 }
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .align-center {
@@ -232,7 +240,7 @@ section ul li span {
   width: 160px;
   height: 160px;
   overflow: hidden;
-
+  cursor: pointer;
 }
 
 .card-label {
@@ -240,4 +248,36 @@ section ul li span {
   font-size: small;
   margin-top: 10px;
   font-weight: 500;
+}
+
+.card-label span:hover {
+  cursor: pointer;
+}
+
+#main-label {
+  background-color: #007fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 95%;
+  left: -1%;
+}
+
+
+.position-relative {
+  position: relative;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #007fff;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
 }
