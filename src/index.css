@@ -197,3 +197,12 @@ section ul {
 section ul li span {
   margin-left: 5px;
 }
+
+.jumbotron {
+  width: 100vw;
+  height: 400px;
+  background-image: url(../public/img/jumbotron.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
