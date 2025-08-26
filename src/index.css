@@ -25,6 +25,14 @@ Header {
   width: 50%;
 }
 
+.col-16 {
+  width: calc(100 / 6 - 15px);
+}
+
+.g-15 {
+  gap: 30px;
+}
+
 .col-20 {
   width: 20%;
 }
@@ -205,4 +213,31 @@ section ul li span {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+
+}
+
+.card .card-top img {
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+
+.card-top {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+
+}
+
+.card-label {
+  font-family: "Open Sans", sans-serif;
+  font-size: small;
+  margin-top: 10px;
+  font-weight: 500;
 }

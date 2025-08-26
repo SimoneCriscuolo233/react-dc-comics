@@ -157,11 +157,23 @@ const Main = () => {
     <main className="bg-dark ">
       <div className="container t-white">
         <div className="py-50">
-          <h2>--&gt;Content goes here &lt;--</h2>
+          <div className="row g-15">
+            {comics.map((elem) => {
+              return (<div key={elem.id} className="col-16">
+                <div className="card">
+                  <div className="card-top">
+                    <img src={elem.thumb} alt={elem.series} />
+                  </div>
+                  <div className="card-label">
+                    <span>{elem.series}</span>
+                  </div>
+                </div>
+              </div>
+              )
+            })}
+          </div>
         </div>
-
       </div>
-
     </main>
   )
 }
