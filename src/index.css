@@ -29,6 +29,10 @@ Header {
   width: calc(100 / 6 - 15px);
 }
 
+.ms-20 {
+  margin-left: 20px;
+}
+
 .g-15 {
   gap: 30px;
 }
