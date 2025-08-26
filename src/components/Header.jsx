@@ -1,4 +1,66 @@
 const Header = () => {
+  const menu = [
+    {
+      id: 1,
+      label: "Characters",
+      href: "#",
+      active: false
+    },
+    {
+      id: 2,
+      label: "Comics",
+      href: "#",
+      active: true
+    },
+    {
+      id: 3,
+      label: "Movies",
+      href: "#",
+      active: false
+    },
+    {
+      id: 4,
+      label: "Tv",
+      href: "#",
+      active: false
+    },
+    {
+      id: 5,
+      label: "Games",
+      href: "#",
+      active: false
+    },
+    {
+      id: 6,
+      label: "Collectibles",
+      href: "#",
+      active: false
+    },
+    {
+      id: 7,
+      label: "Videos",
+      href: "#",
+      active: false
+    },
+    {
+      id: 8,
+      label: "Fans",
+      href: "#",
+      active: false
+    },
+    {
+      id: 9,
+      label: "News",
+      href: "#",
+      active: false
+    },
+    {
+      id: 10,
+      label: "Shop",
+      href: "#",
+      active: false
+    },
+  ]
   return (
     <header>
 
@@ -9,16 +71,12 @@ const Header = () => {
           </div>
           <div className="list col-75">
             <ul className="d-flex">
-              <li><a href="#">Characters</a></li>
-              <li><a href="#" className="active">Comics</a></li>
-              <li><a href="#">Movies</a></li>
-              <li><a href="#">TV</a></li>
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Collectibles</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Fans</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Shop</a></li>
+              {menu.map((elem) => {
+                const { id, href, active, label } = elem
+                return <li key={id}><a href={href} className={active === true ? "active" : ""}>{label}</a></li>
+
+              })}
+
             </ul>
           </div>
         </div>
