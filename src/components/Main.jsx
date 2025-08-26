@@ -162,8 +162,8 @@ const Main = () => {
             {comics.map((elem) => {
               return (<div key={elem.id} className="col-16">
                 <div className="card">
-                  <div className="card-top">
-                    <img src={elem.thumb} alt={elem.series} />
+                  <div className={[1, 12].includes(elem.id) ? "card-top position-relative" : "card-top"}>
+                    <img src={elem.thumb} alt={elem.series} className={[1, 12].includes(elem.id) ? "position-absolute top-25 scale" : ""} />
                   </div>
                   <div className="card-label">
                     <span>{elem.series}</span>
