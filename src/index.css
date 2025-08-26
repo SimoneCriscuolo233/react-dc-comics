@@ -16,6 +16,31 @@ Header {
   width: 100%;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-33 {
+  width: calc(100% / 3);
+}
+
+.col-75 {
+  width: 75%;
+}
+
 .d-flex {
   display: flex;
 }
@@ -35,7 +60,7 @@ Header {
 
 .list ul {
   list-style: none;
-  display: flex;
+  justify-content: end;
 }
 
 .list ul li {
@@ -85,43 +110,34 @@ main {
   position: relative;
 }
 
-.footer-top {
-  display: flex;
-  gap: 50px;
-}
-
 .footer-logo {
   position: absolute;
   bottom: 35px;
   z-index: 0;
 }
 
-.footer-links {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-}
 
-.footer-column h4 {
+
+.col-33 h4 {
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.footer-column ul {
+.col-33 ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-column li {
+.col-33 li {
   margin-bottom: 5px;
 }
 
-.footer-column ul li a {
+.col-33 ul li a {
   text-decoration: none;
   color: gray;
 }
 
-.footer-column ul li a:hover {
+.col-33 ul li a:hover {
   color: #fff;
   cursor: pointer;
 
@@ -129,10 +145,6 @@ main {
 
 .footer-bottom {
   background-color: #303030;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   padding: 40px;
   z-index: 1;
   position: relative;
@@ -155,13 +167,10 @@ main {
   background-color: #007fff;
 }
 
-.pt-50 {
-  padding-top: 50px;
-}
-
 .socials {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 15px;
 }
 
@@ -175,15 +184,16 @@ main {
 }
 
 .shop-img {
-  scale: 0.5;
+  object-fit: contain;
+  max-width: 6rem;
 }
 
 section ul {
   list-style: none;
   padding: 10px;
-  font-size: small;
+  font-size: 0.8rem;
 }
 
-#svg {
-  width: 8rem;
+section ul li span {
+  margin-left: 5px;
 }
