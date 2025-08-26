@@ -141,7 +141,7 @@ main {
 .signup-btn {
   border: 1px solid #007fff;
   background: transparent;
-  color: #007fff;
+  color: #fff;
   padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
@@ -174,10 +174,16 @@ main {
   justify-content: space-between;
 }
 
-.shop-img{
+.shop-img {
   scale: 0.5;
 }
-section ul{
-  list-style: none;
 
+section ul {
+  list-style: none;
+  padding: 10px;
+  font-size: small;
+}
+
+#svg {
+  width: 8rem;
 }
