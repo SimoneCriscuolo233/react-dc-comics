@@ -1,3 +1,4 @@
+import ComicsCard from "./ComicsCard";
 const Main = () => {
   const comics = [
     {
@@ -160,15 +161,9 @@ const Main = () => {
         <div className="py-50">
           <div className="row g-15">
             {comics.map((elem) => {
-              return (<div key={elem.id} className="col-16">
-                <div className="card">
-                  <div className={[1, 12].includes(elem.id) ? "card-top position-relative" : "card-top"}>
-                    <img src={elem.thumb} alt={elem.series} className={[1, 12].includes(elem.id) ? "position-absolute top-25 scale" : ""} />
-                  </div>
-                  <div className="card-label">
-                    <span>{elem.series}</span>
-                  </div>
-                </div>
+              const { id, thumb, series } = elem
+              return (<div key={id} className="col-16">
+                <ComicsCard id={id} thumb={thumb} series={series}/>
               </div>
               )
             })}
