@@ -124,7 +124,7 @@ main {
 }
 
 .footer {
-  background: url('../public/img/footer-bg.jpg') no-repeat center top;
+  background: url('/img/footer-bg.jpg') no-repeat center top;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -221,10 +221,10 @@ section ul li span {
 .jumbotron {
   width: 100vw;
   height: 400px;
-  background-image: url(../public/img/jumbotron.jpg);
+  background-image: url(/img/jumbotron.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .card {
